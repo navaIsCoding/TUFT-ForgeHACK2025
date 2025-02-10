@@ -16,8 +16,24 @@ intact.
 
 ## 2. Run deployment script
 
-If you're running macOS, Linux or WSL, run this command in a terminal:
+If you're running macOS, Linux or WSL, run this command in a terminal from
+the `tuft-forgehack-2025` directory:
 
 ```sh
 bash deploy.sh
 ```
+
+Ensure you have the `forge` utilities installed before continuing.
+
+## 2.1. Manual deployment
+
+Run these commands in the `tuft-forgehack-2025` directory:
+
+1. `forge deploy` to deploy onto your organisation.
+2. `forge install` to install and active the application.
+
+If you already have an application installed, run:
+
+1. `forge install list` to see the current installation ID,
+2. `forge uninstall <id>` to uninstall that instance, and
+3. `forge install` to re-install.
